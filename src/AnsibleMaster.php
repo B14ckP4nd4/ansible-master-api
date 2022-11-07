@@ -10,8 +10,8 @@ class AnsibleMaster
 {
     protected $url;
     protected $api_username;
-    protected $api_password;
-    protected $bearerToken;
+    private $api_password;
+    private $bearerToken;
 
     /**
      * @throws \Exception
