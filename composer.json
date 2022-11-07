@@ -1,0 +1,27 @@
+{
+    "name": "bl4ckp4nd4/ansible-master-api",
+    "description": "Ansible Master Api",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BlackPanda\\AnsibleMasterApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BlackPanda",
+            "email": "46260610+B14ckP4nd4@users.noreply.github.com"
+        }
+    ],
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlackPanda\\AnsibleMasterApi\\AnsibleMasterServiceProvider"
+            ]
+        }
+    },
+
+    "require": {}
+}
