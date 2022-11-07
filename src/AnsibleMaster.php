@@ -28,6 +28,17 @@ class AnsibleMaster
         $this->setBearerToken();
     }
 
+    public function sendConfigurationCommand(string $endPoint,string $params)
+    {
+        $exec = $this->HandleRequest($endPoint,$params);
+
+        if(isset($exec['status']))
+            return $exec;
+
+        return false;
+
+    }
+
     /**
      * @throws \Exception
      */
