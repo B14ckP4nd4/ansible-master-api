@@ -12,7 +12,7 @@ class AnsibleMasterServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . 'config/ansiblemaster.php' => config_path('ansiblemaster.php'),
+            __DIR__ . '/config/ansiblemaster.php' => config_path('ansiblemaster.php'),
         ]);
     }
     /**
